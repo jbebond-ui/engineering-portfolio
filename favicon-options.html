@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Icon directions · James Ly</title>
+  <link rel="icon" href="assets/icons/jl-precision.svg" type="image/svg+xml">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f4f5f7; color: #1d1d1f; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; }
+    main { max-width: 1120px; padding: 54px 30px 38px; margin: auto; }
+    a { color: #0068d7; text-decoration: none; }
+    .back { font-size: 12px; }
+    .eyebrow { color: #787d86; font-size: 10px; letter-spacing: .15em; margin-top: 40px; }
+    h1 { font-size: clamp(34px,5vw,55px); letter-spacing: -.055em; margin: 12px 0; line-height: 1.08; }
+    .intro { color: #686d77; line-height: 1.7; font-size: 14px; margin: 0 0 30px; }
+    .options { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+    .option { font: inherit; text-align: left; padding: 24px 20px; background: white; border: 2px solid transparent; border-radius: 18px; cursor: pointer; color: inherit; transition: border-color .2s,box-shadow .2s; }
+    .option:hover { box-shadow: 0 8px 22px #00000008; }
+    .option[aria-pressed="true"] { border-color: #0071e3; }
+    button:focus-visible,a:focus-visible { outline: 3px solid #0071e3; outline-offset: 4px; }
+    .number { color: #8a8e95; font-size: 10px; letter-spacing: .1em; display: block; }
+    .large { width: 84px; height: 84px; display: block; margin: 28px auto; }
+    h2 { font-size: 17px; letter-spacing: -.03em; margin: 0 0 6px; }
+    .description { font-size: 11px; line-height: 1.6; color: #747a85; min-height: 54px; margin: 0; }
+    .sizes { display: flex; align-items: center; gap: 16px; margin-top: 22px; height: 32px; }
+    .sizes span { font-size: 9px; color: #7b8089; margin-left: auto; }
+    .sizes img { display: block; flex-shrink: 0; }
+    .recommend { font-size: 9px; color: #0071e3; margin-top: 17px; display: block; height: 13px; }
+    .preview { margin-top: 28px; border: 1px solid #e1e3e8; border-radius: 18px; overflow: hidden; background: #fff; }
+    .preview-head { display: flex; justify-content: space-between; align-items: center; padding: 18px 24px; font-size: 11px; color: #6b707c; }
+    .theme { font: inherit; cursor: pointer; border: 1px solid #d8dbe1; border-radius: 20px; background: #fff; color: #31353d; padding: 7px 12px; }
+    .browser { background: #e8e9ed; padding: 15px 20px 0; }
+    .browser.dark { background: #1c1d20; }
+    .browser-bar { display: flex; gap: 10px; align-items: center; }
+    .dots { display: flex; gap: 5px; margin-right: 16px; }
+    .dots i { width: 7px; height: 7px; border-radius: 50%; background: #aeb1b9; }
+    .tab { width: 225px; padding: 12px 16px; border-radius: 10px 10px 0 0; background: #fff; display: flex; gap: 10px; align-items: center; font-size: 11px; }
+    .tab img { width: 16px; height: 16px; }
+    .tab span:last-child { color: #9397a0; margin-left: auto; }
+    .dark .tab { background: #34363b; color: #f4f5f7; }
+    .address { background: white; padding: 16px 20px; font-size: 11px; color: #7b8089; border-top: 1px solid #f4f5f7; }
+    .dark .address { background: #34363b; color: #bbc0ca; border-color: #34363b; }
+    .actions { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; margin-top: 24px; }
+    .primary { display: inline-block; background: #0068d7; color: #fff; padding: 12px 20px; border-radius: 25px; font-size: 12px; }
+    .download { font-size: 12px; }
+    #selection { color: #686d77; font-size: 12px; margin-left: auto; }
+    .note { color: #878c96; font-size: 10px; margin-top: 23px; line-height: 1.7; }
+    @media(max-width:800px) { .options { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:480px) { main { padding:30px 18px; } .option { padding:18px 14px; } .large { width:68px;height:68px;margin:23px auto; } h2{font-size:15px}.description{font-size:10px;min-height:65px}.sizes{gap:10px}.sizes span{font-size:8px}.sizes img:last-of-type{display:none}.preview-head{padding:16px}.browser{padding-inline:10px}.dots{display:none}#selection{margin-left:0;width:100%}.eyebrow{margin-top:30px}.intro{font-size:12px} }
+    @media(prefers-reduced-motion:reduce) { * { transition:none!important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Back to the portfolio</a>
+    <p class="eyebrow">JAMES LY · IDENTITY EXPLORATION</p>
+    <h1>A small mark.<br>A clearer identity.</h1>
+    <p class="intro">Four directions, designed to hold up at 16 pixels. Select one to see it in the browser tab.</p>
+    <div class="options" role="group" aria-label="Choose a favicon direction">
+      <button class="option" data-icon="precision" aria-pressed="true"><span class="number">01 / MONOGRAM</span><img class="large" src="assets/icons/jl-precision.svg" alt="White J and pale blue L on a dark rounded square"><h2>JL Precision</h2><p class="description">Architectural strokes, a sculpted J, and a blue L. Clear, personal, and engineered.</p><div class="sizes"><img src="assets/icons/jl-precision.svg" width="16" height="16" alt="16 pixel preview"><img src="assets/icons/jl-precision.svg" width="24" height="24" alt="24 pixel preview"><img src="assets/icons/jl-precision.svg" width="32" height="32" alt="32 pixel preview"><span>16 / 24 / 32</span></div><span class="recommend">RECOMMENDED · CURRENT PREVIEW</span></button>
+      <button class="option" data-icon="ligature" aria-pressed="false"><span class="number">02 / MONOGRAM</span><img class="large" src="assets/icons/jl-ligature.svg" alt="Dark JL letterforms on a warm stone rounded square"><h2>JL Studio</h2><p class="description">A close-set JL signature in graphite and warm stone. Quiet and editorial.</p><div class="sizes"><img src="assets/icons/jl-ligature.svg" width="16" height="16" alt="16 pixel preview"><img src="assets/icons/jl-ligature.svg" width="24" height="24" alt="24 pixel preview"><img src="assets/icons/jl-ligature.svg" width="32" height="32" alt="32 pixel preview"><span>16 / 24 / 32</span></div><span class="recommend"></span></button>
+      <button class="option" data-icon="orbit" aria-pressed="false"><span class="number">03 / ABSTRACT</span><img class="large" src="assets/icons/orbit.svg" alt="White open orbit with a blue diagonal and blue node"><h2>Orbit</h2><p class="description">An open loop and a moving point. A nod to iteration, systems, and exploration.</p><div class="sizes"><img src="assets/icons/orbit.svg" width="16" height="16" alt="16 pixel preview"><img src="assets/icons/orbit.svg" width="24" height="24" alt="24 pixel preview"><img src="assets/icons/orbit.svg" width="32" height="32" alt="32 pixel preview"><span>16 / 24 / 32</span></div><span class="recommend"></span></button>
+      <button class="option" data-icon="fold" aria-pressed="false"><span class="number">04 / ABSTRACT</span><img class="large" src="assets/icons/fold.svg" alt="Angular white and ice-blue folded ribbon on blue"><h2>Fold</h2><p class="description">One shape, three planes. A bold geometric mark inspired by form and fabrication.</p><div class="sizes"><img src="assets/icons/fold.svg" width="16" height="16" alt="16 pixel preview"><img src="assets/icons/fold.svg" width="24" height="24" alt="24 pixel preview"><img src="assets/icons/fold.svg" width="32" height="32" alt="32 pixel preview"><span>16 / 24 / 32</span></div><span class="recommend"></span></button>
+    </div>
+    <div class="preview"><div class="preview-head"><span>Actual browser-tab scale</span><button class="theme" aria-pressed="false">Dark browser</button></div><div class="browser"><div class="browser-bar"><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div><div class="tab"><img id="tab-icon" src="assets/icons/jl-precision.svg" alt="Selected favicon"><span>James Ly · Engineering</span><span aria-hidden="true">×</span></div></div><div class="address">jbebond-ui.github.io/engineering-portfolio/</div></div></div>
+    <div class="actions"><a class="primary" id="portfolio-preview" href="index.html?icon=precision">Preview on the portfolio ↗</a><a class="download" id="icon-download" href="assets/icons/jl-precision.svg" download="james-ly-favicon.svg">Download SVG ↓</a><span id="selection" role="status" aria-live="polite">Selected: 01 · JL Precision</span></div>
+    <p class="note">Selections preview the icon in this tab. They do not change the portfolio’s default. Choose a direction to make it the final mark.</p>
+  </main>
+  <script>
+    const icons = { precision:'jl-precision',ligature:'jl-ligature',orbit:'orbit',fold:'fold' };
+    document.querySelectorAll('.option').forEach((button,index) => button.addEventListener('click',() => {
+      document.querySelectorAll('.option').forEach(option => option.setAttribute('aria-pressed',String(option===button)));
+      const path='assets/icons/'+icons[button.dataset.icon]+'.svg';
+      document.querySelector('link[rel="icon"]').href=path;
+      document.getElementById('tab-icon').src=path;
+      document.getElementById('icon-download').href=path;
+      document.getElementById('portfolio-preview').href='index.html?icon='+button.dataset.icon;
+      document.getElementById('selection').textContent='Selected: 0'+(index+1)+' · '+button.querySelector('h2').textContent;
+    }));
+    document.querySelector('.theme').addEventListener('click',event => {
+      const dark=document.querySelector('.browser').classList.toggle('dark');
+      event.currentTarget.setAttribute('aria-pressed',String(dark));
+      event.currentTarget.textContent=dark?'Light browser':'Dark browser';
+    });
+  </script>
+</body>
+</html>
