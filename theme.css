@@ -75,13 +75,11 @@ html[data-theme="dark"] .filter.active {
   box-shadow: 0 2px 6px #0003;
 }
 html[data-theme="dark"] .filter span { color: #c3c7d1; }
-html[data-theme="dark"] .work-hint { color: #a7aab5; }
 html[data-theme="dark"] .project-card { background: #24262c; color: #f5f5f7; }
 html[data-theme="dark"] .project-card:hover { box-shadow: 0 12px 36px #0004; }
 html[data-theme="dark"] .card-eyebrow { color: #b7bac6; }
 html[data-theme="dark"] .card-copy > p:last-child { color: #b8bbc5; }
 html[data-theme="dark"] .card-bottom { color: #e0e3ec; }
-html[data-theme="dark"] .card-learn-more { color: #a9cfff; }
 html[data-theme="dark"] .card-fpv { background: #212725; }
 html[data-theme="dark"] .card-fpv::after {
   background: linear-gradient(90deg, #212725 0%, #212725ed 36%, #21272500 72%),

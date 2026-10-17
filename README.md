@@ -26,7 +26,7 @@ Drexel is included as education context only; no additional academic projects ar
 
 ## Interactions and accessibility
 
-Project filters narrow the work by discipline and announce the result count. Each project card opens its case study when clicked, tapped, or activated from the keyboard. A curved-arrow cue indicates the action in place of separate plus buttons. Native project dialogs support Escape to close and return focus to the opening card. The engineering process uses keyboard-operable tabs, and compact screens have a collapsible navigation menu.
+Project filters narrow the work by discipline and announce the result count. Each project card opens its case study when clicked, tapped, or activated from the keyboard. One large looping arrow and ?Click any card for details? cue sit in the margin beside the grid on wide screens, moving above the cards on smaller screens. The cue is shown once, and every card remains fully clickable. Native project dialogs support Escape to close and return focus to the opening card. The engineering process uses keyboard-operable tabs, and compact screens have a collapsible navigation menu.
 
 Visible focus styles, a skip link, descriptive image text, and reduced-motion support are built in. Scroll reveals and subtle imagery movement respect the visitor's motion preference.
 
