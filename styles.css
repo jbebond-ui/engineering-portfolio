@@ -177,20 +177,20 @@
 .project-trigger:focus-visible { outline: 3px solid #287de1; outline-offset: -5px; }
 .project-card:focus-within { box-shadow: 0 12px 36px #10131c12; }
 .card-bottom { min-height: 80px; }
-/* A single hand-drawn cue lives outside the cards, close to the first target. */
-.project-overview { position: relative; }
-.project-note { display: flex; align-items: center; gap: 24px; min-height: 140px; margin: 0 0 16px; padding-left: 8px; color: var(--ink); pointer-events: none; }
-.project-note p { max-width: 150px; color: inherit; font-size: 15px; line-height: 1.5; font-weight: 500; }
-.project-note svg { display: block; width: 180px; height: 105px; flex-shrink: 0; overflow: visible; transform: rotate(35deg); stroke: currentColor; stroke-width: 6.5; stroke-linecap: round; stroke-linejoin: round; }
-@media (min-width: 1600px) {
-  .project-note { --cue-width: clamp(160px, calc((100vw - 1160px) / 2 - 48px), 220px); position: absolute; top: 62px; left: calc(-1 * var(--cue-width) - 16px); width: var(--cue-width); min-height: 0; padding: 0; margin: 0; flex-direction: column; gap: 10px; }
-  .project-note p { font-size: 15px; max-width: 172px; }
-  .project-note svg { width: 100%; height: auto; transform: none; }
+/* One looping cue shares the portfolio heading row and points toward the cards. */
+.work-heading { align-items: center; }
+.project-note { display: flex; align-items: center; justify-content: flex-end; gap: 18px; width: 340px; min-height: 150px; padding-right: 16px; color: var(--ink); flex-shrink: 0; pointer-events: none; }
+.project-note p { max-width: 124px; color: inherit; font-size: 15px; line-height: 1.5; font-weight: 500; }
+.project-note svg { display: block; width: 170px; height: 99px; flex-shrink: 0; overflow: visible; transform: rotate(35deg); stroke: currentColor; stroke-width: 6.5; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 900px) {
+  .work-heading { display: flex; flex-direction: column; align-items: stretch; gap: 10px; margin-bottom: 24px; }
+  .project-note { align-self: flex-end; min-height: 118px; width: 310px; }
+  .project-note svg { width: 150px; height: 88px; }
 }
 @media (max-width: 580px) {
-  .project-note { gap: 16px; min-height: 116px; padding-left: 4px; margin-bottom: 12px; }
+  .project-note { align-self: flex-start; justify-content: flex-start; gap: 16px; width: min(100%, 300px); min-height: 110px; padding: 0 12px 0 4px; }
   .project-note p { max-width: 116px; font-size: 14px; }
-  .project-note svg { width: 130px; height: 76px; }
+  .project-note svg { width: 140px; height: 82px; }
 }
 .company-apple { flex-direction: row; align-items: center; gap: 8px; }
 .company-apple svg { width: 23px; height: 28px; flex-shrink: 0; fill: currentColor; }
