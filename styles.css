@@ -146,13 +146,17 @@
 .dialog-image-caption { font-size: 10px; line-height: 1.6; margin: -18px 0 26px; color: #666b73; }
 .dialog-source-links { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
 .dialog-source-links .text-link { line-height: 1.6; }
-.fixture-iterations { margin-top: 36px; }
+.dialog-gallery figure:only-child { grid-column: 1 / -1; }
+.dialog-gallery figure:only-child img { height: clamp(240px, 45vw, 400px); }
+.dialog-gallery img[src$="drone-assembly.jpg"] { object-position: 50% 35%; }
+.fixture-iterations { --timeline-line: #b9cbd1; --timeline-dot: #426b7a; margin-top: 36px; }
 .fixture-iterations > h3 { font-size: 23px; letter-spacing: -.035em; line-height: 1.25; }
-.fixture-iterations ol { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 0; margin: 20px 0 32px; }
-.fixture-iterations li { background: #eeeff1; border-radius: 12px; padding: 20px 17px; }
-.iteration-index { color: #557c89; font-size: 10px; font-weight: 600; letter-spacing: .08em; }
-.fixture-iterations h4 { font-size: 14px; line-height: 1.4; margin: 17px 0 10px; letter-spacing: -.02em; font-weight: 600; }
-.fixture-iterations p { font-size: 11px; line-height: 1.8; color: #62676e; }
+.fixture-iterations ol { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0; margin: 28px 0 36px; }
+.fixture-iterations li { position: relative; padding: 29px 0 0; }
+.fixture-iterations li::before { content: ''; position: absolute; top: 0; left: 0; width: 11px; height: 11px; border-radius: 50%; background: var(--timeline-dot); z-index: 1; }
+.fixture-iterations li:not(:last-child)::after { content: ''; position: absolute; top: 5px; left: 5px; width: calc(100% + 24px); height: 1px; background: var(--timeline-line); }
+.fixture-iterations h4 { font-size: 15px; line-height: 1.4; margin: 0 0 10px; letter-spacing: -.02em; font-weight: 600; }
+.fixture-iterations p { font-size: 12px; line-height: 1.8; color: #62676e; }
 @media (max-width: 800px) {
   .led-instrument { inset: 215px 20px 80px; }
   .card-product-pair { inset: 220px 14px 85px; }
@@ -167,10 +171,12 @@
   .product-pair figure { padding: 10px 4px 12px; }
   .dialog-product-pair { height: 265px; }
   .dialog-product-pair figcaption { font-size: 10px; }
-  .fixture-iterations ol { grid-template-columns: 1fr; gap: 10px; }
-  .fixture-iterations li { padding: 20px; }
-  .fixture-iterations h4 { margin-top: 8px; font-size: 15px; }
-  .fixture-iterations p { font-size: 12px; }
+  .fixture-iterations ol { grid-template-columns: 1fr; gap: 0; margin-top: 24px; }
+  .fixture-iterations li { padding: 0 0 28px 30px; }
+  .fixture-iterations li:last-child { padding-bottom: 0; }
+  .fixture-iterations li::before { top: 5px; }
+  .fixture-iterations li:not(:last-child)::after { top: 10px; left: 5px; width: 1px; height: 100%; }
+  .fixture-iterations h4 { margin-bottom: 7px; }
 }
 /* One native button covers each card: one focus stop and one generous target. */
 .project-trigger { position: absolute; inset: 0; z-index: 5; display: block; width: 100%; height: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; color: inherit; cursor: pointer; }

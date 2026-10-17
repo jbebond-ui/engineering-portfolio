@@ -153,8 +153,7 @@ html[data-theme="dark"] .dialog-hero[src$="apple-airpods.webp"] { background: #f
 html[data-theme="dark"] .dialog-hero[src$="apple-homeview.webp"] { background: #fff; }
 html[data-theme="dark"] .dialog-hero[src$="simplehuman-light-tester.webp"] { background: #e9edf1; padding: 16px; }
 html[data-theme="dark"] :is(.dialog-gallery figcaption, .dialog-image-caption) { color: #afb5c2; }
-html[data-theme="dark"] .fixture-iterations li { background: #2b2f37; }
-html[data-theme="dark"] .iteration-index { color: #9dc9d8; }
+html[data-theme="dark"] .fixture-iterations { --timeline-line: #50616d; --timeline-dot: #9dc9d8; }
 html[data-theme="dark"] .fixture-iterations p { color: #bbc1cc; }
 
 @media (max-width: 580px) {

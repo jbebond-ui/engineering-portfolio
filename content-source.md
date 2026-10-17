@@ -62,30 +62,32 @@ Sources: <https://lyjames31.wixsite.com/engineeringportfolio/copy-of-work-exp-la
 
 - Exact role: “Test Engineering and R&D Co-op.”
 - Dates: March–September 2025; source describes six months.
-- This experience is presented as three distinct cases: LED testing and data analysis; sensor-can and mirror engineering; and soap-pump reliability and R&D. Together with three Apple cases, the custom FPV build, and two BGE cases, the portfolio has **nine case studies**.
+- This experience is presented as three distinct cases: LED testing and data analysis; sensor-can and mirror engineering; and soap-pump failure analysis and reliability. Together with three Apple cases, the custom FPV build, and two BGE cases, the portfolio has **nine case studies**.
 - No new test-process diagram is requested. Use product imagery and explanatory copy for these cases.
 
 ### LED testing and data analysis
 
 - The owner assigns the 100,000+ cycle button testing, USB-C durability work, charging-test development, and TKlamp analysis to the LED case. The button-test count does not establish a charging-cycle count or a USB-C insertion-cycle count.
+- The owner confirms a robotic arm simulated finger-like button actuation, with the applied force measured using a force gauge. No exact force targets or closed-loop control scheme were supplied.
 - Charging work progressed from manual connection to a linear-actuator approach and then a magnetic-adapter approach. Describe that progression without inventing exact test duration, throughput improvements, acceptance thresholds, or cycle counts.
 - Battery charge cycling and native USB-C port wear are distinct tests. Repeatedly connecting a magnetic adapter does not exercise native USB-C insertion and extraction when the adapter remains in the port. Do not claim the magnetic approach validates native-port mechanical durability.
-- Reverse-mapped TKlamp TK2303D output, commands, and timing. Used Python resampling at 1–5 second intervals to compress more than one billion raw readings, with visualizations across 25+ flashlight units.
+- Reverse-mapped TKlamp TK2303D output, commands, and timing. Used Python resampling at 1–5 second intervals to compress more than one billion raw readings. The owner now confirms visualizations across **50+ LED units**, superseding the older 25+ count.
 - Supplier work included repeatable lux/color measurement workflows; the original source reports lab-to-factory variance within 1–3 lux. This figure is a measurement-alignment result, not an invented product pass/fail limit.
 
 ### Sensor-can and mirror engineering
 
 - The owner confirms work on the **58L Sensor Recycler**, **58L Sensor Can**, and **semi-round sensor can** families. The owner did not specify the semi-round model's capacity; do not infer a capacity or exact generation from the current catalog alone.
 - The owner describes a test fixture for approximately ten recycler units. Keep the count approximate and do not infer an exact simultaneous capacity or completed life-cycle count.
+- The recycler lifecycle fixture used Hall-effect sensors to count cycles, cross-checked with programmed cameras, per the owner’s latest clarification. No particular computer-vision technique is specified.
 - Work included operating voltage/current measurements, investigation of customer returns, and functional and firmware testing in collaboration with electrical engineers. No numerical electrical limits, failure-rate reductions, return counts, or validation thresholds were supplied for this work.
 - Mirror work included functional and life-cycle testing and USB-C port-fixture work. The owner's specified mirror family is **Sensor Mirror Trio Max**. The public Trio Max page describes a plug-in product; the shared case does not establish that every pictured product uses the same charging connector or test setup.
 - Public product imagery shows the commercial mirror and recycler, not the custom fixtures. It does not by itself substantiate individual design ownership or test results.
 
-### Soap-pump reliability and R&D
+### Soap-pump failure analysis and reliability
 
-- Teardown/root-cause analysis across 100+ liquid soap pumps isolated mechanical and electrical failures. The original source attributes approximately $500,000 in savings to resulting design changes.
+- Teardown/root-cause analysis across 100+ liquid soap pumps isolated mechanical and electrical failures. The available owner resume (`James_Ly_Resume.pdf`, modified October 16) confirms approximately $500,000 in savings enabled by design changes. The owner now identifies rusted motors as a failure mode investigated with the lifecycle fixture. Do not infer the corrosion mechanism, a specific redesign, or assign all savings exclusively to motor corrosion.
 - Built an automated carousel that recycled test fluids, combining Arduino, acrylic, 3D prints, DC/peristaltic motors, and MOSFET boards. Staggered actuation balanced power demand. Do not transfer the LED button-test count to this fixture.
-- Fluid-dispenser R&D combined an umbrella valve and barbed button for pressure release; iterated printed seats and button geometry with interchangeable seals.
+- The owner clarified that the umbrella-valve pressure-release work belongs to another project. Its description and diagram are omitted from the soap-pump case.
 - The original overview also mentions concrete drop testing and fabrication with a laser cutter, miter saw, ultrasonic knife, belt sander, and Dremel. Do not attach an unspecified test to a particular commercial model without supporting owner clarification.
 
 Official product context: [Sensor Mirror Trio Max](https://www.simplehuman.com/products/sensor-mirror-trio-max), [58L Sensor Recycler](https://www.simplehuman.com/products/58l-sensor-recycler), and [58L Sensor Can](https://www.simplehuman.com/products/58l-sensor-can). The mirror is a 10-inch model with automatic flip, plug-in power, and 1x/5x/10x views. The recycler provides separate trash/recycling compartments with voice and motion control. These public features describe the products and are separate from James's contributions.
@@ -137,3 +139,10 @@ The inline Apple mark beside the company name in the experience strip uses the e
 | assets/apple-airpods-lifestyle.webp | Person in profile wearing AirPods 5, warm orange lighting. Official commercial lifestyle image. | <https://www.apple.com/v/airpods-5/b/images/overview/welcome/hero_airpods_startframe__ebnozerz0f6u_xlarge.jpg> |
 | assets/apple-airpods-case.webp | Closed white AirPods 5 charging case with status light, transparent background. | <https://www.apple.com/v/airpods-5/b/images/overview/stories/battery_case__e74v6o9y3mie_large_2x.png> |
 | assets/apple-airpods-connection.webp | Open AirPods 5 charging case with earbuds beside an iPhone showing pairing controls; transparent background. Companion iPhone model is not identified. | <https://www.apple.com/v/airpods-5/b/images/overview/stories/airpods-connect_endframe__ffgc3ed2h0mu_large_2x.png> |
+
+## Owner refinements, October 17, 2026
+
+- AirPods prominently includes internal AI analysis-tool and assistant development alongside touch-test and case-line work.
+- BGE mapping was implemented in Python within an ArcGIS workflow with AI-assisted coding during development, per the owner. No specific GIS API, optimization solver, or runtime AI model is claimed.
+- The custom-drone assembly photograph is retained with a lower visual placement; the outdoor flight-practice gallery image and caption are omitted.
+- LED charging-fixture progression is presented as a connected, responsive timeline without numbered stage labels.

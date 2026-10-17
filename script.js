@@ -21,16 +21,16 @@ const projects = {
   },
   airpods: {
     eyebrow: 'APPLE / AIRPODS 5',
-    title: 'More meaningful coverage. Less time on the line.',
-    intro: 'Work across touch-test optimization, case-line architecture, and AI-assisted analysis, connecting test requirements to production evidence and practical operating decisions.',
+    title: 'Better tests. Smarter internal AI tools.',
+    intro: 'Developed internal AI tools alongside touch-test optimization and case-line architecture work: turning production data into repeatable analysis and shared engineering knowledge into an accessible assistant.',
     role: 'Operations Test Engineering Co-op', date: 'Apr–Sep 2026 · Cupertino, CA', tools: 'Test analytics · Python · AI tooling',
     image: 'assets/apple-airpods.webp', alt: 'Official Apple product image of AirPods 5', contain: true,
     metrics: [['≈50%', 'less touch-test time, estimated'], ['≈78%', 'less study time, estimated'], ['900', 'entries in the assistant’s glossary']],
     sections: [
       ['Test coverage', 'Read the test requirements, worked with the responsible engineers to understand measurement history, and examined production failure data. Unique defects per million (UDPPM) analysis helped identify overlapping coverage so redundant touch-test work could be reduced while preserving defect capture. The handoff describes touch-test time as nearly halved, represented here as an estimated 50% reduction.'],
       ['Line architecture', 'Compared retrofit, modular-cell, conveyor, and rotary concepts for the case test line. Modeled equipment reuse and investment across multiple lines, and investigated combining stations and running tests in parallel. The analysis informed an executive funding decision and evaluated paths toward higher throughput and greater automation.'],
-      ['Analysis tooling', 'Co-developed a conversational tool that lets test engineers run redundancy studies on production data without writing code. It gathers and processes the data, ranks candidates, and generates visualizations for engineering review. A typical study fell from roughly 45 minutes to about 10 minutes, an estimated 78% reduction rounded to the nearest percent. Engineers retain the final decision on test changes.'],
-      ['Shared knowledge', 'Built an internal AI assistant to make test information easier to find, including a 900-entry glossary. Organized engineering knowledge and test-flow references so answers could be grounded in shared sources, reducing the need to search through scattered trackers and presentations.']
+      ['Internal AI analysis tool', 'Co-developed a conversational tool that lets test engineers run redundancy studies on production data without writing code. It gathers and processes the data, ranks candidates, and generates visualizations for engineering review. A typical study fell from roughly 45 minutes to about 10 minutes, an estimated 78% reduction rounded to the nearest percent. Engineers retain the final decision on test changes.'],
+      ['Internal AI assistant', 'Built an internal AI assistant to make test information easier to find, including a 900-entry glossary. Organized engineering knowledge and test-flow references so answers could be grounded in shared sources, reducing the need to search through scattered trackers and presentations.']
     ],
     gallery: [], source: 'https://www.apple.com/airpods-5/', sourceLabel: 'View AirPods on Apple',
     note: 'Public product image © Apple. Estimated time reductions describe specific engineering workflows, not overall factory throughput.'
@@ -61,7 +61,7 @@ const projects = {
       ['The build', 'Created a bill of materials around a Source One V4 frame, four iFlight Xing2 motors, a SpeedyBee F405 V3 stack, and an ELRS receiver. Assembled and soldered the electronics, integrated the camera and video transmitter, then configured and calibrated the system in Betaflight.'],
       ['The iteration', 'Troubleshot a damaged receiver and a faulty radio before progressing from line-of-sight flight to FPV and acro flying. Flight observations informed PID tuning and motor-output adjustments. The project connected component choices to what actually happens in the air.']
     ],
-    gallery: [['assets/drone-assembly.jpg', 'Hands-on assembly and soldering.'], ['assets/drone-flight.jpg', 'Taking the build outside for flight practice.']],
+    gallery: [['assets/drone-assembly.jpg', 'Hands-on assembly and soldering.']],
     source: 'https://lyjames31.wixsite.com/engineeringportfolio/drone',
     note: 'Original build photographs and project details from my Wix portfolio.'
   },
@@ -89,7 +89,7 @@ const projects = {
     role: 'Test Engineering and R&D Co-op', date: 'Mar–Sep 2025', tools: 'Fixture design · Arduino · Python',
     image: 'assets/simplehuman-light-tester.webp', alt: 'Commercial TKlamp measurement instrument with generic accessories; the project device and custom fixtures are not shown', contain: true,
     imageCaption: 'Commercial measurement hardware. The project device and custom fixtures are not shown.',
-    metrics: [['100k+', 'cycles in button endurance testing'], ['25+', 'LED units in data visualizations'], ['3', 'charging-fixture approaches']],
+    metrics: [['100k+', 'cycles in button endurance testing'], ['50+', 'LED units in data visualizations'], ['3', 'charging-fixture approaches']],
     iterations: [
       ['Manual connection', 'Established the charge/discharge workflow with hands-on USB-C connection between cycles.'],
       ['Linear actuation', 'Automated direct plug insertion and withdrawal. The small connector made fixture alignment a central design constraint.'],
@@ -98,8 +98,8 @@ const projects = {
     sections: [
       ['Battery cycling', 'Built a lifecycle setup to fully charge and then discharge the battery, with automated connection and disconnection between cycles. Iterating the charging interface made repeated testing less dependent on manual plug handling.'],
       ['Two test purposes', 'Magnetic coupling supported repeatable electrical charge/discharge cycles while the adapter stayed seated. It did not cycle the native USB-C receptacle. Direct insertion and withdrawal addressed the separate question of mechanical connector durability.'],
-      ['Button endurance', 'Developed automated button testing that ran more than 100,000 cycles. This endurance work and the USB-C durability work belonged to the LED project.'],
-      ['Optical data', 'Reverse-mapped the TKlamp instrument’s commands and timing, then used Python resampling to reduce more than a billion raw readings into manageable datasets. Visualizations across more than 25 units made the optical test results easier to compare.'],
+      ['Button endurance', 'Used a robotic arm to repeatedly actuate the button, simulating forces similar to a human finger press. Measured the applied force with a force gauge to characterize the loading and make the test representative of everyday use. The automated endurance test ran more than 100,000 cycles.'],
+      ['Optical data', 'Reverse-mapped the TKlamp instrument’s commands and timing, then used Python resampling to reduce more than a billion raw readings into manageable datasets. Visualizations across more than 50 units made the optical test results easier to compare.'],
       ['Measurement consistency', 'Worked with manufacturing partners in China and Taiwan to standardize lux and color measurement workflows. The original case study reports lab-to-factory variation within one to three lux after standardization.']
     ],
     gallery: [],
@@ -117,7 +117,7 @@ const projects = {
     ],
     metrics: [['≈10', 'recycler units per lifecycle fixture'], ['V + I', 'operating voltage & current measurements'], ['USB-C', 'mirror port lifecycle fixture']],
     sections: [
-      ['Recycler fixture', 'Built a lifecycle fixture that could accommodate approximately ten sensor recycler units at a time. The setup supported repeated operation and unit monitoring, providing a practical way to investigate customer returns alongside ongoing reliability testing.'],
+      ['Recycler fixture', 'Built a lifecycle fixture that could accommodate approximately ten sensor recycler units at a time. Integrated Hall-effect sensors to count operating cycles, then cross-checked those counts with programmed cameras. Linking the cycle counts to observed operation helped monitor the units during repeated use and investigate customer returns.'],
       ['Electrical behavior', 'Measured battery voltage and current draw while the recyclers were operating. Reviewing these measurements alongside unit behavior helped troubleshoot returns and understand how the units performed during repeated operation.'],
       ['Functional & firmware', 'Performed functional tests and collaborated with electrical engineers on firmware testing across the sensor can lineup. The work covered the 58L Sensor Recycler, 58L Sensor Can, and semi-round sensor can, connecting observed hardware behavior with the controls being evaluated.'],
       ['Sensor Mirror Trio Max', 'Performed functional testing and helped develop lifecycle fixtures for the mirror lineup. The work also included a dedicated USB-C port lifecycle fixture to repeat connector insertion and withdrawal.'],
@@ -127,31 +127,33 @@ const projects = {
     note: 'Official simplehuman images illustrate the commercial product lineups; the custom fixtures are not pictured. Fixture capacity is approximate. Personal contributions are described from my project account.'
   },
   simplehuman: {
-    eyebrow: 'SIMPLEHUMAN / SOAP-PUMP RELIABILITY & R&D',
+    eyebrow: 'SIMPLEHUMAN / SOAP-PUMP FAILURE ANALYSIS',
     title: 'Find the failure. Improve the design.',
-    intro: 'Investigated returned liquid soap pumps and developed fluid-cycling fixtures to connect failure analysis with repeatable testing and design iteration.',
+    intro: 'Connected customer-return teardowns with automated lifecycle testing to identify rusted motors as a failure mode. The investigation helped inform design changes that improved reliability and enabled approximately $500,000 in cost savings.',
     role: 'Test Engineering and R&D Co-op', date: 'Mar–Sep 2025', tools: 'Arduino · Prototyping · Failure analysis',
     image: 'assets/simplehuman-soap-pumps.webp', alt: 'Commercial simplehuman soap pumps illustrating the product family investigated', contain: true,
-    metrics: [['100+', 'liquid soap pumps investigated']],
+    metrics: [['100+', 'liquid soap pumps investigated'], ['≈$500k', 'in savings enabled by design changes']],
     sections: [
-      ['Failure analysis', 'Investigated more than 100 liquid soap pumps to identify mechanical and electrical failure causes. Teardowns connected observed symptoms to the components and interfaces that needed closer attention.'],
-      ['Fluid-cycling fixture', 'Built an automated carousel that recycled test fluids using Arduino control, acrylic and printed parts, DC and peristaltic motors, and MOSFET boards. Staggered actuation balanced power demand during repeated operation.'],
-      ['Dispenser R&D', 'Explored a fluid-dispenser pressure-release mechanism combining an umbrella valve and a barbed button. Iterated printed seats and button geometry with interchangeable seals to develop the mechanical interface.']
+      ['Start with the returns', 'Performed teardown and failure analysis on more than 100 returned liquid soap pumps, investigating mechanical and electrical faults. Connected the observed dispensing problems to the condition of the internal components, building a clearer picture of where reliability was breaking down.'],
+      ['Make the test repeatable', 'Built an automated fluid-cycling carousel to run the pumps through repeated dispensing cycles while recycling the test fluid. The fixture combined Arduino control, acrylic and printed parts, DC and peristaltic motors, and MOSFET boards. Staggered actuation balanced demand on a shared power supply, supporting repeatable lifecycle testing.'],
+      ['Trace the motor failure', 'Used the lifecycle fixture to investigate pump performance through repeated operation, then connected the test behavior with teardown findings. That combination identified rusted motors as a failure mode and tied the visible dispensing problem to a specific component condition.'],
+      ['Turn evidence into changes', 'Brought the failure-analysis and lifecycle findings into the design-improvement process. The work helped enable changes that improved reliability and contributed approximately $500,000 in cost savings, connecting the investigation to a measurable engineering outcome.']
     ],
-    gallery: [['assets/umbrella-valve.webp', 'Umbrella-valve principle explored in fluid-dispenser R&D.']],
+    gallery: [],
     source: 'https://lyjames31.wixsite.com/engineeringportfolio/copy-of-work-exp-layout',
-    note: 'Commercial product imagery and an illustrative valve schematic from my original portfolio. Custom fixture photographs are not shown.'
+    note: 'Commercial product imagery illustrates the soap-pump family. Savings reflect the design changes supported by the failure-analysis work; the custom lifecycle fixture is not pictured.'
   },
   data: {
     eyebrow: 'BGE / INFRASTRUCTURE DATA & AUTOMATION',
     title: 'Better placement. $15M+ in cost efficiencies.',
-    intro: 'Using geospatial analysis and automation to prioritize drone coverage and make large infrastructure datasets easier to work with.',
+    intro: 'Built a Python-based geospatial automation workflow in ArcGIS, using AI-assisted development to turn infrastructure asset data into actionable drone-site priorities.',
     role: 'UAS Development and Operations Co-op', date: 'Apr–Dec 2024', tools: 'ArcGIS · Python · Power BI',
     image: 'assets/bge-lng-tanks.jpg', alt: 'LNG storage tanks illuminated blue at night',
     metrics: [['$15M+', 'in cost efficiencies'], ['3M+', 'assets evaluated for coverage'], ['1 day', 'processing, down from 3 weeks']],
     sections: [
       ['The challenge', 'Determine where drone docks could provide useful coverage across a large utility network. A repeatable, asset-based workflow needed to turn geographic information into clear site priorities.'],
-      ['The workflow', 'Developed an automated mapping algorithm in ArcGIS to identify optimal Drone in the Box (DIB) locations for maximum coverage of more than three million assets. The workflow drove over $15 million in cost efficiencies and reduced processing from three weeks to one day.'],
+      ['Python implementation', 'Implemented the automated mapping algorithm in Python within an ArcGIS workflow, using AI-assisted coding during development. The workflow automated spatial coverage analysis across more than three million utility assets to identify optimal Drone in the Box (DIB) locations and prioritize sites for maximum asset coverage.'],
+      ['Operational impact', 'The repeatable mapping workflow reduced processing from three weeks to one day and drove more than $15 million in cost efficiencies. Automating the analysis made infrastructure-scale coverage planning practical within a much shorter turnaround.'],
       ['The field data', 'Inspected and compiled data on more than 37,640 sections of LNG storage tank support pylons using an A-200 Pipe Crawler. Related work used Python and Power BI to make infrastructure and operational data easier to review.']
     ],
     gallery: [],
@@ -266,7 +268,7 @@ function openProject(key, trigger) {
     ${project.products ? `<div class="product-pair dialog-product-pair">${project.products.map(product => `<figure><img src="${product.image}" alt="${escapeHTML(product.alt)}"><figcaption>${escapeHTML(product.name)}</figcaption></figure>`).join('')}</div>` : `<img class="dialog-hero${project.contain ? ' contain' : ''}" src="${project.image}" alt="${escapeHTML(project.alt)}">`}
     ${project.imageCaption ? `<p class="dialog-image-caption">${escapeHTML(project.imageCaption)}</p>` : ''}
     ${project.metrics.length ? `<div class="dialog-metrics">${project.metrics.map(([value, label]) => `<div><strong>${escapeHTML(value)}</strong><p>${escapeHTML(label)}</p></div>`).join('')}</div>` : ''}
-    ${project.iterations ? `<section class="fixture-iterations" aria-labelledby="iterations-title"><h3 id="iterations-title">Three iterations. One alignment problem.</h3><ol>${project.iterations.map(([title, copy], index) => `<li><span class="iteration-index">0${index + 1}</span><h4>${escapeHTML(title)}</h4><p>${escapeHTML(copy)}</p></li>`).join('')}</ol></section>` : ''}
+    ${project.iterations ? `<section class="fixture-iterations" aria-labelledby="iterations-title"><h3 id="iterations-title">Evolving the charging fixture.</h3><ol role="list">${project.iterations.map(([title, copy]) => `<li><h4>${escapeHTML(title)}</h4><p>${escapeHTML(copy)}</p></li>`).join('')}</ol></section>` : ''}
     ${project.sections.map(([title, copy]) => `<section class="dialog-section"><h3>${escapeHTML(title)}</h3><p>${escapeHTML(copy)}</p></section>`).join('')}
     ${project.gallery.length ? `<div class="dialog-gallery">${project.gallery.map(([src, caption]) => `<figure><img src="${src}" alt="${escapeHTML(caption)}" loading="lazy"><figcaption>${escapeHTML(caption)}</figcaption></figure>`).join('')}</div>` : ''}
     <div class="dialog-source"><p>${escapeHTML(project.note)}</p><div class="dialog-source-links">${project.products ? project.products.map(product => `<a class="text-link" href="${product.source}" target="_blank" rel="noopener noreferrer">${escapeHTML(product.name)} on simplehuman <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>`).join('') : `<a class="text-link" href="${project.source}" target="_blank" rel="noopener noreferrer">${escapeHTML(project.sourceLabel || 'Original case study')} <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>`}</div></div>`;
