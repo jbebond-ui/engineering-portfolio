@@ -11,11 +11,11 @@ Nine case studies follow this presentation order:
 - **Apple iPhone servicing:** Siemens NX design, material selection, and manufacturability.
 - **Apple AirPods:** test coverage, line architecture, and AI-assisted analysis.
 - **Apple HomeView:** UDPPM analysis supporting throughput and yield work.
-- **simplehuman LED testing:** button endurance, USB-C durability, charging-test development, and TKlamp data analysis.
-- **simplehuman sensor cans and mirrors:** operating measurements, return investigations, functional and firmware testing, and fixtures for the sensor-can and Sensor Mirror Trio Max families.
 - **simplehuman soap-pump reliability:** teardown analysis, an automated fluid-recycling carousel, and fluid-dispenser R&D.
+- **BGE infrastructure intelligence:** $15M+ in cost efficiencies through GIS ranking and automation across utility assets.
+- **simplehuman sensor cans and mirrors:** operating measurements, return investigations, functional and firmware testing, and fixtures for the sensor-can and Sensor Mirror Trio Max families.
 - **Custom FPV drone:** component selection, assembly, configuration, and flight iteration.
-- **BGE infrastructure intelligence:** GIS ranking and automation across utility assets.
+- **simplehuman LED testing:** button endurance, USB-C durability, charging-test development, and TKlamp data analysis.
 - **BGE UAS engineering:** utility drone payload design and field operations.
 
 The Apple analysis-time reduction is an estimate: `(45 − 10) / 45 × 100 ≈ 78%`, rounded to the nearest percent. The approximately 50% touch-test reduction summarizes the source's “nearly halved” description. Both are labeled as estimates in the interface. BGE figures use the owner's updated account: $15M+ in cost efficiencies, 3M+ assets, and three weeks reduced to one day.
@@ -26,9 +26,11 @@ Drexel is included as education context only; no additional academic projects ar
 
 ## Interactions and accessibility
 
-Project filters narrow the work by discipline and announce the result count. Native project dialogs provide detailed case studies with Escape-to-close behavior and return focus to the opening button. The engineering process uses keyboard-operable tabs, and compact screens have a collapsible navigation menu.
+Project filters narrow the work by discipline and announce the result count. Each project card opens its case study when clicked, tapped, or activated from the keyboard. A curved-arrow cue indicates the action in place of separate plus buttons. Native project dialogs support Escape to close and return focus to the opening card. The engineering process uses keyboard-operable tabs, and compact screens have a collapsible navigation menu.
 
 Visible focus styles, a skip link, descriptive image text, and reduced-motion support are built in. Scroll reveals and subtle imagery movement respect the visitor's motion preference.
+
+Light and dark appearance follow the system preference by default. The theme toggle saves an explicit choice locally and restores it on later visits. The experience strip pairs the Apple name with an inline mark sourced from Apple's official website header; its source is recorded in [content-source.md](content-source.md).
 
 ## Favicon directions
 
@@ -48,6 +50,7 @@ Open [localhost:8000](http://localhost:8000). On Windows, `py -m http.server 800
 
 - `index.html`: page structure, project summaries, navigation, and contact links.
 - `styles.css`: responsive layout, typography, visual states, and motion preferences.
+- `theme.css` and `theme.js`: light/dark colors, system preference, and the saved theme toggle.
 - `script.js`: interactive project details and interface behavior.
 - `assets/`: optimized source photographs and product images.
 - `content-source.md`: provenance and limits on claims taken from the original portfolio.

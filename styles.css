@@ -172,4 +172,32 @@
   .fixture-iterations h4 { margin-top: 8px; font-size: 15px; }
   .fixture-iterations p { font-size: 12px; }
 }
+/* One native button covers each card: one focus stop and one generous target. */
+.project-trigger { position: absolute; inset: 0; z-index: 5; display: block; width: 100%; height: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; color: inherit; cursor: pointer; }
+.project-trigger:focus-visible { outline: 3px solid #287de1; outline-offset: -5px; }
+.project-card:focus-within { box-shadow: 0 12px 36px #10131c12; }
+.card-bottom { min-height: 80px; }
+.card-learn-more { display: inline-flex; align-items: center; gap: 8px; color: inherit; opacity: .76; white-space: nowrap; font-size: 10px; line-height: 1.5; transition: opacity .2s; }
+.card-learn-more svg { display: block; width: 34px; height: 24px; flex-shrink: 0; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.project-card:hover .card-learn-more, .project-card:focus-within .card-learn-more { opacity: 1; }
+.company-apple { flex-direction: row; align-items: center; gap: 8px; }
+.company-apple svg { width: 23px; height: 28px; flex-shrink: 0; fill: currentColor; }
+.nav-shell { gap: 20px; }
+.nav-shell .brand { margin-right: auto; }
+.nav-shell nav { order: 1; }
+.nav-shell .theme-toggle { order: 2; flex-shrink: 0; }
+.nav-shell .menu-toggle { order: 3; }
+@media (max-width: 800px) {
+  .nav-shell { gap: 13px; }
+  .nav-shell nav { gap: 17px; }
+  .card-bottom { flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; padding-top: 10px; padding-bottom: 14px; }
+  .card-bottom > .card-learn-more { font-size: 9px; }
+  .card-learn-more svg { width: 30px; height: 20px; }
+  .company-apple svg { width: 20px; height: 25px; }
+}
+@media (max-width: 580px) {
+  .nav-shell { gap: 10px; }
+  .nav-shell nav { gap: 0; }
+  .card-bottom > .card-learn-more { font-size: 10px; }
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready .reveal{opacity:1;transform:none}.hero-product{transform:none;will-change:auto}.project-card:hover,.motion-ready .project-card.in-view:hover,.button:hover{transform:none}}

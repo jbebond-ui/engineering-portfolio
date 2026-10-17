@@ -127,6 +127,8 @@ The owner confirmed the sensor-can families and Sensor Mirror Trio Max before th
 
 Public commercial product images are credited to Apple in the case studies. They illustrate the product context; the custom servicing part and internal fixtures are not shown.
 
+The inline Apple mark beside the company name in the experience strip uses the exact SVG path from the regular global-navigation Apple link on [Apple's iPhone 18 Pro page](https://www.apple.com/iphone-18-pro/), retrieved on 2026-10-16. Source selector: `.globalnav-link-apple .globalnav-image-regular svg`. The original `0 0 14 44` viewBox includes header spacing; the local `0 12 14 17` viewBox frames the mark without changing its path. Its fill follows the surrounding text color, and the decorative SVG is hidden from assistive technology because the adjacent text already names Apple. No third-party icon library is used.
+
 | Local asset | Description | Original Apple media |
 | --- | --- | --- |
 | assets/apple-iphone.webp | Burgundy iPhone 18 Pro rear camera and aluminum body, positioned on the right against black. Official commercial product image. | <https://www.apple.com/v/iphone-18-pro/c/images/overview/product-viewer/color_burgundy__f95it7a6dnyq_large.jpg> |
