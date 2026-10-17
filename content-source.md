@@ -1,6 +1,6 @@
 # Portfolio source and asset provenance
 
-Content combines James Ly's existing portfolio, the supplied updated résumé and project handoff, and direct owner clarifications on 2026-10-16. Personal contributions and results are self-reported. Later owner corrections supersede earlier Wix figures. Original Wix and official Apple images were resized to a maximum dimension of 1600 px and compressed for this site. Original alpha transparency is preserved. No imagery was generated.
+Content combines James Ly's existing portfolio, the supplied updated résumé and project handoff, and direct owner clarifications on 2026-10-16. Personal contributions and results are self-reported. Later owner corrections supersede earlier Wix figures. Original Wix and official Apple and simplehuman images were resized to a maximum dimension of 1600 px and compressed for this site. Original alpha transparency is preserved. No imagery was generated.
 
 Repository scope excludes Tesla and Nanotronics. The updated résumé confirms a B.S. in Mechanical Engineering at Drexel with expected graduation in 2027. The supplied PDFs and handoff remain outside the repository; only selected portfolio copy is published. Contact continues to use the owner's confirmed LinkedIn profile.
 
@@ -58,17 +58,37 @@ Source: <https://lyjames31.wixsite.com/engineeringportfolio/work-exp-layout>
 
 ## simplehuman engineering
 
-Source: <https://lyjames31.wixsite.com/engineeringportfolio/copy-of-work-exp-layout>
+Sources: <https://lyjames31.wixsite.com/engineeringportfolio/copy-of-work-exp-layout>, the updated résumé, and the owner's direct clarification of the project split and test methods.
 
 - Exact role: “Test Engineering and R&D Co-op.”
 - Dates: March–September 2025; source describes six months.
-- Reliability work included automated fixtures, 100,000+ cycle button tests, USB-C durability measurements, and concrete drop testing. Keep the 100,000+ figure attached to button testing, not an unverified cycle count for the carousel.
-- Teardown/root-cause analysis across 100+ liquid soap pumps isolated mechanical and electrical failures. Source attributes approximately $500,000 in savings to resulting design changes.
-- Built an automated carousel that recycled test fluids, combining Arduino, acrylic, 3D prints, DC/peristaltic motors, and MOSFET boards. Staggered actuation balanced power demand.
-- Reverse-mapped TKlamp TK2303D output, commands, and timing. Used Python resampling at 1–5 second intervals to compress more than one billion raw readings, with visualization across 25+ flashlight units.
+- This experience is presented as three distinct cases: LED testing and data analysis; sensor-can and mirror engineering; and soap-pump reliability and R&D. Together with three Apple cases, the custom FPV build, and two BGE cases, the portfolio has **nine case studies**.
+- No new test-process diagram is requested. Use product imagery and explanatory copy for these cases.
+
+### LED testing and data analysis
+
+- The owner assigns the 100,000+ cycle button testing, USB-C durability work, charging-test development, and TKlamp analysis to the LED case. The button-test count does not establish a charging-cycle count or a USB-C insertion-cycle count.
+- Charging work progressed from manual connection to a linear-actuator approach and then a magnetic-adapter approach. Describe that progression without inventing exact test duration, throughput improvements, acceptance thresholds, or cycle counts.
+- Battery charge cycling and native USB-C port wear are distinct tests. Repeatedly connecting a magnetic adapter does not exercise native USB-C insertion and extraction when the adapter remains in the port. Do not claim the magnetic approach validates native-port mechanical durability.
+- Reverse-mapped TKlamp TK2303D output, commands, and timing. Used Python resampling at 1–5 second intervals to compress more than one billion raw readings, with visualizations across 25+ flashlight units.
+- Supplier work included repeatable lux/color measurement workflows; the original source reports lab-to-factory variance within 1–3 lux. This figure is a measurement-alignment result, not an invented product pass/fail limit.
+
+### Sensor-can and mirror engineering
+
+- The owner confirms work on the **58L Sensor Recycler**, **58L Sensor Can**, and **semi-round sensor can** families. The owner did not specify the semi-round model's capacity; do not infer a capacity or exact generation from the current catalog alone.
+- The owner describes a test fixture for approximately ten recycler units. Keep the count approximate and do not infer an exact simultaneous capacity or completed life-cycle count.
+- Work included operating voltage/current measurements, investigation of customer returns, and functional and firmware testing in collaboration with electrical engineers. No numerical electrical limits, failure-rate reductions, return counts, or validation thresholds were supplied for this work.
+- Mirror work included functional and life-cycle testing and USB-C port-fixture work. The owner's specified mirror family is **Sensor Mirror Trio Max**. The public Trio Max page describes a plug-in product; the shared case does not establish that every pictured product uses the same charging connector or test setup.
+- Public product imagery shows the commercial mirror and recycler, not the custom fixtures. It does not by itself substantiate individual design ownership or test results.
+
+### Soap-pump reliability and R&D
+
+- Teardown/root-cause analysis across 100+ liquid soap pumps isolated mechanical and electrical failures. The original source attributes approximately $500,000 in savings to resulting design changes.
+- Built an automated carousel that recycled test fluids, combining Arduino, acrylic, 3D prints, DC/peristaltic motors, and MOSFET boards. Staggered actuation balanced power demand. Do not transfer the LED button-test count to this fixture.
 - Fluid-dispenser R&D combined an umbrella valve and barbed button for pressure release; iterated printed seats and button geometry with interchangeable seals.
-- Coordinated with China/Taiwan manufacturing partners and standardized lux/color measurement workflows; source reports lab-to-factory variance within 1–3 lux.
-- Fabrication tools include laser cutter, miter saw, ultrasonic knife, belt sander, and Dremel.
+- The original overview also mentions concrete drop testing and fabrication with a laser cutter, miter saw, ultrasonic knife, belt sander, and Dremel. Do not attach an unspecified test to a particular commercial model without supporting owner clarification.
+
+Official product context: [Sensor Mirror Trio Max](https://www.simplehuman.com/products/sensor-mirror-trio-max), [58L Sensor Recycler](https://www.simplehuman.com/products/58l-sensor-recycler), and [58L Sensor Can](https://www.simplehuman.com/products/58l-sensor-can). The mirror is a 10-inch model with automatic flip, plug-in power, and 1x/5x/10x views. The recycler provides separate trash/recycling compartments with voice and motion control. These public features describe the products and are separate from James's contributions.
 
 ## Image manifest
 
@@ -93,6 +113,15 @@ These names are the production-ready local assets. The originals remain availabl
 | `assets/umbrella-valve.webp` | Umbrella-valve schematic, transparent | simplehuman | <https://static.wixstatic.com/media/d47117_8ce0337cfc3e408bae98d75f708c7026~mv2.webp> |
 
 The source simplehuman page also includes a generic manufacturing stock photo (original filename `istockphoto-1150892960-612x612.jpg`). It has intentionally not been copied: it adds no evidence about James's work and has unclear reuse rights.
+
+## Official simplehuman image sources
+
+The owner confirmed the sensor-can families and Sensor Mirror Trio Max before these images were selected for the split product presentation. The 58L Sensor Recycler image represents that family only; it is not an image of the single-compartment 58L Sensor Can or the semi-round model. The exact finishes shown are brushed, with official catalog identifiers ST2050 and ST3050. Both images retain the originals' transparency and shadows and were resized from 2400 × 2400 PNGs to 1600 × 1600 WebP files. No background removal, compositing, or generated imagery was used.
+
+| Local asset | Public product shown | Official product page | Original media URL |
+| --- | --- | --- | --- |
+| `assets/simplehuman-sensor-recycler.webp` | 58L Sensor Recycler, brushed ST2050, angled view with closed lid | [58L Sensor Recycler](https://www.simplehuman.com/products/58l-sensor-recycler) | <https://cdn.shopify.com/s/files/1/2804/6630/files/ST2050_Gallery_2.png?v=1787377852> |
+| `assets/simplehuman-mirror-trio-max.webp` | Sensor Mirror Trio Max, brushed ST3050, angled view | [Sensor Mirror Trio Max](https://www.simplehuman.com/products/sensor-mirror-trio-max) | <https://cdn.shopify.com/s/files/1/2804/6630/files/ST3050_TrioMax_Brushed_Angled.png?v=1787378339> |
 
 ## Official Apple image sources
 

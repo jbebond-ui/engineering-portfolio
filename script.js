@@ -82,22 +82,65 @@ const projects = {
     source: 'https://lyjames31.wixsite.com/engineeringportfolio/work-exp-layout',
     note: 'Results reflect my updated résumé and project account. Skydio imagery represents commercial hardware.'
   },
-  simplehuman: {
-    eyebrow: 'SIMPLEHUMAN / TEST ENGINEERING & R&D',
-    title: 'Confidence, built one test at a time.',
-    intro: 'Turning repeated testing into useful engineering evidence through automated fixtures, product teardowns, measurement workflows, and data analysis.',
-    role: 'Test Engineering and R&D Co-op', date: 'Mar–Sep 2025', tools: 'Arduino · Python · Prototyping',
-    image: 'assets/simplehuman-soap-pumps.webp', alt: 'Commercial simplehuman soap pumps, representing the products in the reliability work', contain: true,
-    metrics: [['100k+', 'cycles in automated button tests'], ['100+', 'soap pumps investigated'], ['25+', 'flashlight units visualized']],
-    sections: [
-      ['The challenge', 'Understand how everyday products fail, and build tests that reveal why. The work ranged from button endurance and USB-C durability to concrete drop tests and mechanical and electrical failure analysis.'],
-      ['The fixtures', 'Built an automated carousel that recycled test fluids using Arduino control, acrylic and printed parts, DC and peristaltic motors, and MOSFET boards. Staggered actuation balanced power demand. Separate automated button fixtures ran more than 100,000 cycles.'],
-      ['The evidence', 'Investigated more than 100 liquid soap pumps to identify failure causes. For flashlight testing, reverse-mapped TKlamp TK2303D commands and timing, then used Python resampling to compress over a billion raw readings and visualize results across more than 25 units.'],
-      ['The handoff', 'Worked with manufacturing partners in China and Taiwan to standardize lux and color measurements. The original case study reports lab-to-factory variation within one to three lux after standardization.']
+  'simplehuman-led': {
+    eyebrow: 'SIMPLEHUMAN / LED LIFECYCLE & OPTICAL TESTING',
+    title: 'A better test starts with a better fixture.',
+    intro: 'Developed test systems for a compact LED product, connecting mechanical fixture design, battery cycling, button endurance, and optical data analysis.',
+    role: 'Test Engineering and R&D Co-op', date: 'Mar–Sep 2025', tools: 'Fixture design · Arduino · Python',
+    image: 'assets/simplehuman-light-tester.webp', alt: 'Commercial TKlamp measurement instrument with generic accessories; the project device and custom fixtures are not shown', contain: true,
+    imageCaption: 'Commercial measurement hardware. The project device and custom fixtures are not shown.',
+    metrics: [['100k+', 'cycles in button endurance testing'], ['25+', 'LED units in data visualizations'], ['3', 'charging-fixture approaches']],
+    iterations: [
+      ['Manual connection', 'Established the charge/discharge workflow with hands-on USB-C connection between cycles.'],
+      ['Linear actuation', 'Automated direct plug insertion and withdrawal. The small connector made fixture alignment a central design constraint.'],
+      ['Magnetic coupling', 'Used a magnetic USB-C cable with an adapter seated in the port. Bringing the cable close to the adapter reduced the positioning precision needed to reconnect power.']
     ],
-    gallery: [['assets/simplehuman-light-tester.webp', 'Commercial TKlamp measurement hardware used in the data workflow.'], ['assets/umbrella-valve.webp', 'Umbrella-valve principle explored in fluid-dispenser R&D.']],
+    sections: [
+      ['Battery cycling', 'Built a lifecycle setup to fully charge and then discharge the battery, with automated connection and disconnection between cycles. Iterating the charging interface made repeated testing less dependent on manual plug handling.'],
+      ['Two test purposes', 'Magnetic coupling supported repeatable electrical charge/discharge cycles while the adapter stayed seated. It did not cycle the native USB-C receptacle. Direct insertion and withdrawal addressed the separate question of mechanical connector durability.'],
+      ['Button endurance', 'Developed automated button testing that ran more than 100,000 cycles. This endurance work and the USB-C durability work belonged to the LED project.'],
+      ['Optical data', 'Reverse-mapped the TKlamp instrument’s commands and timing, then used Python resampling to reduce more than a billion raw readings into manageable datasets. Visualizations across more than 25 units made the optical test results easier to compare.'],
+      ['Measurement consistency', 'Worked with manufacturing partners in China and Taiwan to standardize lux and color measurement workflows. The original case study reports lab-to-factory variation within one to three lux after standardization.']
+    ],
+    gallery: [],
     source: 'https://lyjames31.wixsite.com/engineeringportfolio/copy-of-work-exp-layout',
-    note: 'Product and instrument imagery from my original case study; these are commercial products, not photographs of the custom test fixtures.'
+    note: 'Test methods are summarized at a high level. Product geometry, internal specifications, raw data, and custom fixture drawings are omitted.'
+  },
+  'simplehuman-home': {
+    eyebrow: 'SIMPLEHUMAN / SENSOR CANS & SENSOR MIRROR',
+    title: 'Everyday products. Repeatable evidence.',
+    intro: 'Worked across the 58L Sensor Recycler, 58L Sensor Can, semi-round sensor can, and Sensor Mirror Trio Max. The work connected lifecycle fixture development, electrical measurements, and functional testing with electrical engineers.',
+    role: 'Test Engineering and R&D Co-op', date: 'Mar–Sep 2025', tools: 'Fixture development · Electrical measurement · Functional testing',
+    products: [
+      { image: 'assets/simplehuman-sensor-recycler.webp', name: '58L Sensor Recycler', alt: 'simplehuman 58L Sensor Recycler, official commercial product image', source: 'https://www.simplehuman.com/products/58l-sensor-recycler' },
+      { image: 'assets/simplehuman-mirror-trio-max.webp', name: 'Sensor Mirror Trio Max', alt: 'simplehuman Sensor Mirror Trio Max, official commercial product image', source: 'https://www.simplehuman.com/products/sensor-mirror-trio-max' }
+    ],
+    metrics: [['≈10', 'recycler units per lifecycle fixture'], ['V + I', 'operating voltage & current measurements'], ['USB-C', 'mirror port lifecycle fixture']],
+    sections: [
+      ['Recycler fixture', 'Built a lifecycle fixture that could accommodate approximately ten sensor recycler units at a time. The setup supported repeated operation and unit monitoring, providing a practical way to investigate customer returns alongside ongoing reliability testing.'],
+      ['Electrical behavior', 'Measured battery voltage and current draw while the recyclers were operating. Reviewing these measurements alongside unit behavior helped troubleshoot returns and understand how the units performed during repeated operation.'],
+      ['Functional & firmware', 'Performed functional tests and collaborated with electrical engineers on firmware testing across the sensor can lineup. The work covered the 58L Sensor Recycler, 58L Sensor Can, and semi-round sensor can, connecting observed hardware behavior with the controls being evaluated.'],
+      ['Sensor Mirror Trio Max', 'Performed functional testing and helped develop lifecycle fixtures for the mirror lineup. The work also included a dedicated USB-C port lifecycle fixture to repeat connector insertion and withdrawal.'],
+      ['The connector interface', 'The mirror fixture focused on the mechanical USB-C interface: repeatedly mating and unmating the plug to evaluate the port under repeated use. This is distinct from the LED battery-cycling setup, where a magnetic adapter could remain in the port.']
+    ],
+    gallery: [],
+    note: 'Official simplehuman images illustrate the commercial product lineups; the custom fixtures are not pictured. Fixture capacity is approximate. Personal contributions are described from my project account.'
+  },
+  simplehuman: {
+    eyebrow: 'SIMPLEHUMAN / SOAP-PUMP RELIABILITY & R&D',
+    title: 'Find the failure. Improve the design.',
+    intro: 'Investigated returned liquid soap pumps and developed fluid-cycling fixtures to connect failure analysis with repeatable testing and design iteration.',
+    role: 'Test Engineering and R&D Co-op', date: 'Mar–Sep 2025', tools: 'Arduino · Prototyping · Failure analysis',
+    image: 'assets/simplehuman-soap-pumps.webp', alt: 'Commercial simplehuman soap pumps illustrating the product family investigated', contain: true,
+    metrics: [['100+', 'liquid soap pumps investigated']],
+    sections: [
+      ['Failure analysis', 'Investigated more than 100 liquid soap pumps to identify mechanical and electrical failure causes. Teardowns connected observed symptoms to the components and interfaces that needed closer attention.'],
+      ['Fluid-cycling fixture', 'Built an automated carousel that recycled test fluids using Arduino control, acrylic and printed parts, DC and peristaltic motors, and MOSFET boards. Staggered actuation balanced power demand during repeated operation.'],
+      ['Dispenser R&D', 'Explored a fluid-dispenser pressure-release mechanism combining an umbrella valve and a barbed button. Iterated printed seats and button geometry with interchangeable seals to develop the mechanical interface.']
+    ],
+    gallery: [['assets/umbrella-valve.webp', 'Umbrella-valve principle explored in fluid-dispenser R&D.']],
+    source: 'https://lyjames31.wixsite.com/engineeringportfolio/copy-of-work-exp-layout',
+    note: 'Commercial product imagery and an illustrative valve schematic from my original portfolio. Custom fixture photographs are not shown.'
   },
   data: {
     eyebrow: 'BGE / INFRASTRUCTURE DATA & AUTOMATION',
@@ -220,11 +263,13 @@ function openProject(key, trigger) {
     <h2 id="dialog-title">${escapeHTML(project.title)}</h2>
     <p class="dialog-intro">${escapeHTML(project.intro)}</p>
     <div class="dialog-meta"><div>ROLE<strong>${escapeHTML(project.role)}</strong></div><div>WHEN<strong>${escapeHTML(project.date)}</strong></div><div>TOOLS<strong>${escapeHTML(project.tools)}</strong></div></div>
-    <img class="dialog-hero${project.contain ? ' contain' : ''}" src="${project.image}" alt="${escapeHTML(project.alt)}">
+    ${project.products ? `<div class="product-pair dialog-product-pair">${project.products.map(product => `<figure><img src="${product.image}" alt="${escapeHTML(product.alt)}"><figcaption>${escapeHTML(product.name)}</figcaption></figure>`).join('')}</div>` : `<img class="dialog-hero${project.contain ? ' contain' : ''}" src="${project.image}" alt="${escapeHTML(project.alt)}">`}
+    ${project.imageCaption ? `<p class="dialog-image-caption">${escapeHTML(project.imageCaption)}</p>` : ''}
     ${project.metrics.length ? `<div class="dialog-metrics">${project.metrics.map(([value, label]) => `<div><strong>${escapeHTML(value)}</strong><p>${escapeHTML(label)}</p></div>`).join('')}</div>` : ''}
+    ${project.iterations ? `<section class="fixture-iterations" aria-labelledby="iterations-title"><h3 id="iterations-title">Three iterations. One alignment problem.</h3><ol>${project.iterations.map(([title, copy], index) => `<li><span class="iteration-index">0${index + 1}</span><h4>${escapeHTML(title)}</h4><p>${escapeHTML(copy)}</p></li>`).join('')}</ol></section>` : ''}
     ${project.sections.map(([title, copy]) => `<section class="dialog-section"><h3>${escapeHTML(title)}</h3><p>${escapeHTML(copy)}</p></section>`).join('')}
     ${project.gallery.length ? `<div class="dialog-gallery">${project.gallery.map(([src, caption]) => `<figure><img src="${src}" alt="${escapeHTML(caption)}" loading="lazy"><figcaption>${escapeHTML(caption)}</figcaption></figure>`).join('')}</div>` : ''}
-    <div class="dialog-source"><p>${escapeHTML(project.note)}</p><a class="text-link" href="${project.source}" target="_blank" rel="noopener noreferrer">${escapeHTML(project.sourceLabel || 'Original case study')} <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div>`;
+    <div class="dialog-source"><p>${escapeHTML(project.note)}</p><div class="dialog-source-links">${project.products ? project.products.map(product => `<a class="text-link" href="${product.source}" target="_blank" rel="noopener noreferrer">${escapeHTML(product.name)} on simplehuman <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>`).join('') : `<a class="text-link" href="${project.source}" target="_blank" rel="noopener noreferrer">${escapeHTML(project.sourceLabel || 'Original case study')} <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>`}</div></div>`;
   closeMenu();
   document.body.classList.add('dialog-open');
   dialog.showModal();

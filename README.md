@@ -4,19 +4,23 @@ An Apple-inspired engineering portfolio built with HTML, CSS, and vanilla JavaSc
 
 ## Content
 
-Project details come from James's updated résumé, co-op project notes, direct clarifications, and [original Wix portfolio](https://lyjames31.wixsite.com/engineeringportfolio). Product imagery comes from Apple's official product pages; other photographs come from the original portfolio. [content-source.md](content-source.md) records attribution and calculation notes. Images are served locally from `assets/`. The supplied résumé and handoff documents are not distributed with the site.
+Project details come from James's updated résumé, co-op project notes, direct clarifications, and [original Wix portfolio](https://lyjames31.wixsite.com/engineeringportfolio). Product imagery comes from Apple's and simplehuman's official product pages; other photographs come from the original portfolio. [content-source.md](content-source.md) records attribution and calculation notes. Images are served locally from `assets/`. The supplied résumé and handoff documents are not distributed with the site.
 
-Seven case studies follow this presentation order:
+Nine case studies follow this presentation order:
 
 - **Apple iPhone servicing:** Siemens NX design, material selection, and manufacturability.
 - **Apple AirPods:** test coverage, line architecture, and AI-assisted analysis.
 - **Apple HomeView:** UDPPM analysis supporting throughput and yield work.
-- **simplehuman product reliability:** automated testing, failure analysis, and R&D.
+- **simplehuman LED testing:** button endurance, USB-C durability, charging-test development, and TKlamp data analysis.
+- **simplehuman sensor cans and mirrors:** operating measurements, return investigations, functional and firmware testing, and fixtures for the sensor-can and Sensor Mirror Trio Max families.
+- **simplehuman soap-pump reliability:** teardown analysis, an automated fluid-recycling carousel, and fluid-dispenser R&D.
 - **Custom FPV drone:** component selection, assembly, configuration, and flight iteration.
 - **BGE infrastructure intelligence:** GIS ranking and automation across utility assets.
 - **BGE UAS engineering:** utility drone payload design and field operations.
 
 The Apple analysis-time reduction is an estimate: `(45 − 10) / 45 × 100 ≈ 78%`, rounded to the nearest percent. The approximately 50% touch-test reduction summarizes the source's “nearly halved” description. Both are labeled as estimates in the interface. BGE figures use the owner's updated account: $15M+ in cost efficiencies, 3M+ assets, and three weeks reduced to one day.
+
+The simplehuman split preserves the scope of each result: 100,000+ cycles refers to LED button testing, 25+ units refers to flashlight data visualizations, and the recycler fixture serves approximately ten units. Charging-test development progressed from manual connections to a linear actuator and a magnetic adapter; magnetic reconnection does not reproduce native USB-C port insertion wear. The owner confirmed work on the 58L Sensor Recycler, 58L Sensor Can, semi-round sensor can, and Sensor Mirror Trio Max. Their public product photos illustrate the commercial products rather than custom test fixtures. No additional test-process diagram is included.
 
 Drexel is included as education context only; no additional academic projects are invented. Tesla and Nanotronics are intentionally excluded from this portfolio.
 
@@ -28,7 +32,7 @@ Visible focus styles, a skip link, descriptive image text, and reduced-motion su
 
 ## Favicon directions
 
-Open [favicon-options.html](favicon-options.html) to compare JL Precision, JL Studio, Orbit, and Fold at 16, 24, and 32 pixels. The chooser includes light/dark browser-tab previews and SVG downloads. JL Precision is the current default. A `?icon=precision`, `?icon=ligature`, `?icon=orbit`, or `?icon=fold` URL previews an alternative on the portfolio without changing its default.
+Open [favicon-options.html](favicon-options.html) to compare JL Precision, JL Studio, Orbit, and Fold at 16, 24, and 32 pixels. The chooser includes light/dark browser-tab previews and SVG downloads. JL Precision is the owner-confirmed default. A `?icon=precision`, `?icon=ligature`, `?icon=orbit`, or `?icon=fold` URL previews an alternative on the portfolio without changing its default.
 
 ## Local preview
 
