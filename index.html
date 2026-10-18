@@ -14,7 +14,9 @@
   <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css?v=20261017-projects">
   <link rel="stylesheet" href="theme.css?v=20261017-projects">
+  <link rel="stylesheet" href="hero.css?v=20261018-intro">
   <script src="script.js?v=20261017-projects" defer></script>
+  <script src="hero.js?v=20261018-intro" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -34,10 +36,129 @@
   </header>
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <h1 id="hero-title">Engineering ideas.<br><span>Into the real world.</span></h1>
-        <p class="hero-description">From a first sketch to the final test.<br>I design, build, and make things work better.</p>
-        <div class="hero-actions"><a class="button button-blue" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-intro content-width">
+        <div class="hero-content">
+          <h1 id="hero-title">Engineering ideas.<br><span>Into the real world.</span></h1>
+          <p class="hero-description">From a first sketch to the final test.<br>I design, build, and make things work better.</p>
+          <div class="hero-actions"><a class="button button-blue" href="#work">Explore my work <span aria-hidden="true">&#8595;</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">&#8599;</span></a></div>
+        </div>
+        <div class="hero-study" data-stage="build">
+          <div class="study-canvas" id="hero-study-panel" role="tabpanel" aria-labelledby="study-build">
+            <div class="study-grid" aria-hidden="true"></div>
+            <div class="study-art" role="img" aria-label="A layered aluminum assembly with a blue core, illustrating how components fit together.">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560" fill="none" aria-hidden="true" focusable="false">
+                <title id="assembly-art-title">An idea, engineered into an assembly</title>
+                <desc id="assembly-art-desc">An illustrative exploded assembly with machined aluminum plates, a translucent blue core, and four precision fasteners.</desc>
+                <defs>
+                  <linearGradient id="assembly-silver" x1="-140" y1="-150" x2="150" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".46" stop-color="#edf1f5"/><stop offset=".76" stop-color="#d2dae3"/><stop offset="1" stop-color="#f6f8fb"/></linearGradient>
+                  <linearGradient id="assembly-bevel" x1="80" y1="0" x2="520" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#a2adbc"/><stop offset=".33" stop-color="#e3e8ee"/><stop offset=".55" stop-color="#b9c4d1"/><stop offset="1" stop-color="#8d9bab"/></linearGradient>
+                  <linearGradient id="assembly-edge-metal" x1="-130" y1="-130" x2="130" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#b4c0cd"/><stop offset=".5" stop-color="#8190a3"/><stop offset="1" stop-color="#b5c0cd"/></linearGradient>
+                  <linearGradient id="assembly-pocket" x1="-80" y1="-100" x2="80" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#adbaca"/><stop offset=".5" stop-color="#dae2ea"/><stop offset="1" stop-color="#f1f5f9"/></linearGradient>
+                  <linearGradient id="assembly-blue-face" x1="220" y1="244" x2="373" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#b9eaff" stop-opacity=".94"/><stop offset=".4" stop-color="#4eb3ff" stop-opacity=".94"/><stop offset="1" stop-color="#0870ee" stop-opacity=".95"/></linearGradient>
+                  <linearGradient id="assembly-blue-edge" x1="207" y1="282" x2="393" y2="325" gradientUnits="userSpaceOnUse"><stop stop-color="#0067ce"/><stop offset=".45" stop-color="#39abff"/><stop offset="1" stop-color="#075cbe"/></linearGradient>
+                  <linearGradient id="assembly-pin" x1="-6" y1="0" x2="6" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#8795a5"/><stop offset=".35" stop-color="#e6edf3"/><stop offset=".6" stop-color="#bbc9d6"/><stop offset="1" stop-color="#768496"/></linearGradient>
+                  <radialGradient id="assembly-ground"><stop stop-color="#355b83" stop-opacity=".2"/><stop offset="1" stop-color="#355b83" stop-opacity="0"/></radialGradient>
+                  <radialGradient id="assembly-aura"><stop stop-color="#2e9aff" stop-opacity=".2"/><stop offset="1" stop-color="#2e9aff" stop-opacity="0"/></radialGradient>
+                  <pattern id="assembly-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V7" stroke="#9caec2" stroke-width=".5" opacity=".3"/></pattern>
+                  <path id="assembly-outline" d="M-108-130H108Q130-130 130-108V108Q130 130 108 130H-108Q-130 130-130 108V-108Q-130-130-108-130Z"/>
+                  <path id="assembly-ring" fill-rule="evenodd" d="M-108-130H108Q130-130 130-108V108Q130 130 108 130H-108Q-130 130-130 108V-108Q-130-130-108-130ZM79 0A79 79 0 1 1-79 0A79 79 0 1 1 79 0Z"/>
+                  <g id="assembly-fastener">
+                    <path class="assembly-edge" d="M-5-35H5V-6C5-2-5-2-5-6Z" fill="url(#assembly-pin)" stroke="#74859a" stroke-width=".6"/>
+                    <path class="assembly-detail" d="M-5-29L5-27M-5-24L5-22M-5-19L5-17M-5-14L5-12M-5-9L5-7" stroke="#687b91" stroke-width="1" opacity=".65"/>
+                    <path class="assembly-edge" d="M-10-38V-32C-10-25 10-25 10-32V-38" fill="url(#assembly-pin)" stroke="#74859a" stroke-width=".7"/>
+                    <ellipse class="assembly-surface" cy="-38" rx="10" ry="5" fill="#eaf0f6" stroke="#8395a8" stroke-width=".8"/>
+                    <path class="assembly-detail" d="M-4-38l2-2h4l2 2-2 2h-4Z" fill="#586b81"/>
+                  </g>
+                </defs>
+
+                <ellipse class="assembly-shadow" cx="300" cy="469" rx="230" ry="67" fill="url(#assembly-ground)"/>
+
+                <g class="assembly-guides" stroke="#7d9ab9" stroke-width="1" opacity=".42">
+                  <path d="M300 39V503M79 398l442-177M79 221l442 177" stroke-dasharray="3 7"/>
+                  <path d="M77 414l223 89 223-89M73 408l8 14M519 408l8 14M300 496v14"/>
+                  <path d="M540 185h20M540 392h20M551 185v207M547 190l4-5 4 5M547 387l4 5 4-5"/>
+                  <path d="M54 270h13M60.5 263.5v13M536 121h13M542.5 114.5v13"/>
+                  <circle cx="300" cy="503" r="3" fill="#f0f6fc"/>
+                </g>
+
+                <g class="assembly-base">
+                  <g transform="matrix(.9 .36 -.9 .36 300 406)"><use class="assembly-edge" href="#assembly-outline" fill="url(#assembly-edge-metal)" stroke="#9baabb" stroke-width="1.2"/></g>
+                  <g transform="matrix(.9 .36 -.9 .36 300 392)">
+                    <use class="assembly-surface" href="#assembly-outline" fill="url(#assembly-silver)" stroke="#afbdcc" stroke-width="1.3"/>
+                    <rect class="assembly-detail" x="-120" y="-120" width="240" height="240" rx="18" stroke="#fff" stroke-width="1.4"/>
+                    <circle class="assembly-surface" r="92" fill="url(#assembly-pocket)" stroke="#a9b9ca" stroke-width="1.3"/>
+                    <circle class="assembly-detail" r="83" stroke="#f6faff" stroke-width="2"/>
+                    <circle class="assembly-detail" r="63" stroke="#9baec1" stroke-width="1.2"/>
+                    <circle class="assembly-surface" r="59" fill="url(#assembly-hatch)"/>
+                    <circle class="assembly-detail" r="23" fill="#c4d2df" stroke="#91a4b9"/>
+                    <circle class="assembly-detail" r="13" fill="#91a5ba" stroke="#e3ecf4" stroke-width="2"/>
+                    <path class="assembly-detail" d="M-103-28v56M103-28v56M-28-103h56M-28 103h56" stroke="#9cabbc" stroke-width="7" stroke-linecap="round"/>
+                    <path class="assembly-highlight" d="M-103-27v54M103-27v54M-27-103h54M-27 103h54" stroke="#f8fbff" stroke-width="2" stroke-linecap="round"/>
+                    <g class="assembly-detail" fill="#70859b" stroke="#f9fcff" stroke-width="2"><circle cx="-96" cy="-96" r="7"/><circle cx="96" cy="-96" r="7"/><circle cx="96" cy="96" r="7"/><circle cx="-96" cy="96" r="7"/></g>
+                    <g class="assembly-detail" fill="#a6b6c6" stroke="#f6f9fc"><circle cx="-55" cy="-55" r="3"/><circle cx="55" cy="-55" r="3"/><circle cx="55" cy="55" r="3"/><circle cx="-55" cy="55" r="3"/></g>
+                  </g>
+                  <path class="assembly-highlight" d="M83 415l199 80q18 7 36 0l199-80" stroke="#ecf2f8" stroke-width="1.2" opacity=".6"/>
+                </g>
+
+                <g class="assembly-core">
+                  <ellipse class="assembly-glow" cx="300" cy="311" rx="154" ry="63" fill="url(#assembly-aura)"/>
+                  <path class="assembly-edge" d="M207 282v22c0 50 186 50 186 0v-22" fill="url(#assembly-blue-edge)" stroke="#267cd2" stroke-width="1"/>
+                  <ellipse class="assembly-surface" cx="300" cy="282" rx="93" ry="39" fill="url(#assembly-blue-face)" stroke="#8cd3ff" stroke-width="1.5"/>
+                  <ellipse class="assembly-detail" cx="300" cy="282" rx="77" ry="32" stroke="#e3f7ff" stroke-width="1.2" opacity=".9"/>
+                  <ellipse class="assembly-detail" cx="300" cy="282" rx="64" ry="26" stroke="#0b78db" stroke-width="1.2" opacity=".65"/>
+                  <ellipse class="assembly-surface" cx="300" cy="282" rx="36" ry="15" fill="#e0f4ff" fill-opacity=".58" stroke="#c3eaff"/>
+                  <ellipse class="assembly-detail" cx="300" cy="282" rx="17" ry="7" fill="#147edb" fill-opacity=".5" stroke="#e5f8ff"/>
+                  <path class="assembly-detail" d="M223 296v11M235 307v11M249 315v10M265 320v11M282 323v11M300 324v11M318 323v11M335 320v11M351 315v10M365 307v11M377 296v11" stroke="#d0eeff" stroke-width="1" opacity=".34"/>
+                  <path class="assembly-highlight" d="M217 298c16 28 148 38 168-2" stroke="#a6e5ff" stroke-width="1.4" opacity=".8"/>
+                  <g class="assembly-detail" fill="#157cce" stroke="#a3e0ff" stroke-width="1"><ellipse cx="246" cy="260" rx="4" ry="1.7"/><ellipse cx="354" cy="260" rx="4" ry="1.7"/><ellipse cx="354" cy="304" rx="4" ry="1.7"/><ellipse cx="246" cy="304" rx="4" ry="1.7"/></g>
+                </g>
+
+                <g class="assembly-top">
+                  <g transform="matrix(.9 .36 -.9 .36 300 199)"><use class="assembly-edge" href="#assembly-ring" fill="url(#assembly-edge-metal)" stroke="#9baabb" stroke-width="1.2"/></g>
+                  <g transform="matrix(.9 .36 -.9 .36 300 185)">
+                    <use class="assembly-surface" href="#assembly-ring" fill="url(#assembly-silver)" stroke="#aebccb" stroke-width="1.2"/>
+                    <rect class="assembly-highlight" x="-120" y="-120" width="240" height="240" rx="17" stroke="#fff" stroke-width="1.7"/>
+                    <circle class="assembly-detail" r="87" stroke="#b8c6d4" stroke-width="1.2"/>
+                    <circle class="assembly-highlight" r="80" stroke="#fff" stroke-width="1.8"/>
+                    <path class="assembly-detail" d="M-112-22v44M112-22v44M-22-112h44M-22 112h44" stroke="#b2c0ce" stroke-width="4" stroke-linecap="round"/>
+                    <g class="assembly-detail" fill="#94a5b8" stroke="#fff" stroke-width="2.2"><circle cx="-96" cy="-96" r="9"/><circle cx="96" cy="-96" r="9"/><circle cx="96" cy="96" r="9"/><circle cx="-96" cy="96" r="9"/></g>
+                    <g class="assembly-detail" fill="#6a7f95"><circle cx="-96" cy="-96" r="4.8"/><circle cx="96" cy="-96" r="4.8"/><circle cx="96" cy="96" r="4.8"/><circle cx="-96" cy="96" r="4.8"/></g>
+                    <path class="assembly-detail" d="M-109-69v18M-104-69v18M-99-69v18M69 109H51M69 104H51M69 99H51" stroke="#c3ced9" stroke-width="1"/>
+                  </g>
+                  <path class="assembly-highlight" d="M83 208l199 80q18 7 36 0l199-80" stroke="#f5f9fd" stroke-width="1.1" opacity=".64"/>
+                </g>
+
+                <g class="assembly-fasteners">
+                  <g transform="translate(300 108)"><use href="#assembly-fastener"/></g>
+                  <g transform="translate(472.8 177)"><use href="#assembly-fastener"/></g>
+                  <g transform="translate(300 246)"><use href="#assembly-fastener"/></g>
+                  <g transform="translate(127.2 177)"><use href="#assembly-fastener"/></g>
+                </g>
+
+                <g class="assembly-scan" opacity="0" stroke="#187eff">
+                  <ellipse cx="300" cy="335" rx="183" ry="74" fill="#338bff" fill-opacity=".045" stroke-width="1.3"/>
+                  <ellipse cx="300" cy="335" rx="173" ry="69" stroke-width=".7" stroke-dasharray="3 8"/>
+                  <path d="M112 335h18M470 335h18M300 255v15M300 400v15" stroke-width="2"/>
+                  <circle cx="473" cy="335" r="4" fill="#187eff" stroke="white" stroke-width="2"/>
+                </g>
+              </svg>
+            </div>
+            <span class="study-annotation" aria-hidden="true">System integration</span>
+            <span class="study-footnote">Illustrative assembly</span>
+          </div>
+          <div class="study-caption">
+            <p class="study-invitation" id="study-invitation">Take an idea from sketch to test.</p>
+            <div class="study-tabs" role="tablist" aria-label="Explore the engineering stages" aria-describedby="study-invitation" hidden>
+              <button class="study-tab" type="button" id="study-sketch" role="tab" aria-selected="false" aria-controls="hero-study-panel" tabindex="-1" data-stage="sketch"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 12 8-8 4 4-8 8-5 1 1-5Zm6-6 4 4M3 17h14"/></svg>Sketch</button>
+              <button class="study-tab" type="button" id="study-build" role="tab" aria-selected="true" aria-controls="hero-study-panel" tabindex="0" data-stage="build"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m10 2 7 4-7 4-7-4 7-4Zm-7 8 7 4 7-4M3 14l7 4 7-4"/></svg>Build</button>
+              <button class="study-tab" type="button" id="study-test" role="tab" aria-selected="false" aria-controls="hero-study-panel" tabindex="-1" data-stage="test"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h3l2-5 4 10 2-5h3"/><path d="M3 3h14v14H3z" stroke-opacity=".4"/></svg>Test</button>
+            </div>
+            <div class="study-example" aria-live="polite" aria-atomic="true">
+              <p>From individual parts to a working system.</p>
+              <button class="text-link" type="button" data-project="fpv" aria-haspopup="dialog" aria-controls="project-dialog" hidden><span class="study-link-label">See my custom drone build</span><span aria-hidden="true">&#8599;</span></button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="hero-showcase apple-showcase content-width">
         <div class="showcase-orbit" aria-hidden="true"></div>

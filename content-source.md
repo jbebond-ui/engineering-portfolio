@@ -146,3 +146,9 @@ The inline Apple mark beside the company name in the experience strip uses the e
 - BGE mapping was implemented in Python within an ArcGIS workflow with AI-assisted coding during development, per the owner. No specific GIS API, optimization solver, or runtime AI model is claimed.
 - The custom-drone assembly photograph is retained with a lower visual placement; the outdoor flight-practice gallery image and caption are omitted.
 - LED charging-fixture progression is presented as a connected, responsive timeline without numbered stage labels.
+
+## Interactive introduction, October 18, 2026
+
+- The hero uses an original SVG illustration of a generic mechanical assembly. It is explicitly labeled illustrative; it does not depict a proprietary part or claim a tested design.
+- Sketch, Build, and Test views illustrate the engineering process. Their example links open the existing iPhone design, custom FPV build, and LED testing cases respectively.
+- The illustration contains no invented measurements, performance data, or product specifications.
